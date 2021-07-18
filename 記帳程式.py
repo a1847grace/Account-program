@@ -1,19 +1,12 @@
-輸入次數 = 0
-輸入次數 = int(輸入次數)
-記帳清單_品名 = []
-記帳清單_數量 = []
-記帳清單_價格 = []
+products = []
 while True:
-	購買物品 = input ('請打上你購買的物品')
-	if 購買物品 == 'q':
+	name = input('請輸入商品名稱：')
+	if name == 'q':
 		break
-	數量 = input ('請打上你購買的數量')
-	價格 = input ('請打上你付出的金錢')
-	記帳清單_品名.append(購買物品)
-	記帳清單_數量.append(數量)
-	記帳清單_價格.append(價格)
-項次 = input ('請輸入想知道本日購買的第幾樣商品')
-項次 = int(項次)
-print (記帳清單_品名[項次 - 1])
-print (記帳清單_數量[項次 - 1], '個')
-print (記帳清單_價格[項次 - 1], '元')
+	price = input ('請輸入商品價格')
+	#p = []
+	#p.append(name)
+	#p.append(price)
+	#p = [name, price]
+	products.append([name,price])
+print(products)
